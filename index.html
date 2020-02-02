@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Gold Miner</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Gold Miner</h1>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row mx-2rem justify-content-center">
+        <div class="col-4 text-center">
+          <h2> Click The Gold Mine!</h2>
+          <button type="button" class="btn" btn-lg" onclick="clicker()"><img
+              src="https://lh3.googleusercontent.com/proxy/pMWQ54YMTRST9L05sAXrZClureHwmbghY_oo9-vdNO0tAdmmENuMirJzx2fCmkTFbGeRD3Mog6Xo6eooaxBUk9PV"
+              alt=""></button>
+          <h3>Gold count: <span id="click-counter">0</span> </h3>
+          <h4>Click power: <span id="click-power">1</span></h4>
+          <h4>(Gold Per Second: <span id="gold-per-second">0</span> )</h4>
+        </div>
+        <div class="col-4 text-center">
+          <h2>Upgrades</h2>
+          <div class="row">
+            <div class="col-12">
+              <h4><button type=" button" name="" id="" class="btn btn-primary" btn-lg btn-block"
+                  onclick="addPickaxe()">Pickaxe</button> Cost: <span id="pickaxe-cost">10</span>
+              </h4>
+              <h6>(Click + 2)</h6>
+              <h5>Amount: <span id="pickaxe-count">0</span></h5>
+            </div>
+            <div class="col-12">
+              <h4><button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block"
+                  onclick="addMineCart()">Mine
+                  Cart</button> Cost: <span id="minecart-cost">50</span></h4>
+              <h6>
+                (Click + 5)
+              </h6>
+              <h5>Amount: <span id="minecart-count">0</span></h5>
+            </div>
+            <div class="col-12">
+              <h4>
+                <button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block"
+                  onclick="addAutoMiner()">Extra
+                  Miner</button> Cost: <span id="miner-cost">250</span>
+              </h4>
+              <h6>
+                (+ 10 per second)
+              </h6>
+              <h5>Amount: <span id="miner-count">0</span></h5>
+            </div>
+            <div class="col-12">
+              <h4>
+                <button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block"
+                  onclick="autoExcavator()">Excavator</button> Cost: <span id="excavator-cost">1000</span>
+              </h4>
+              <h6>
+                (+ 50 per second)
+              </h6>
+              <h5>Amount: <span id="excavator-count">0</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
